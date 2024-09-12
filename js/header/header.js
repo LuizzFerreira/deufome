@@ -1,28 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
-    fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header-placeholder').innerHTML = data;
-        });
+const menuToggle = document.getElementById('menuToggle');
+const asideMenu = document.getElementById('asideMenu');
+const iconX = document.getElementById('iconX');
+
+menuToggle.addEventListener('click', () => {
+    asideMenu.classList.toggle('show'); // Alterna a visibilidade do menu
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const menuButton = document.getElementById('menuHome');
-    const menuContent = document.getElementById('asideMenu');
-  
-    menuButton.addEventListener('click', function (event) {
-      event.stopPropagation();
-      if (menuContent.style.display === 'block') {
-        menuContent.style.display = 'none';
-      } else {
-        menuContent.style.display = 'block';
-      }
-    });
-  
-    document.addEventListener('click', function (event) {
-      const target = event.target;
-      if (!menuContent.contains(target) && target !== iconX) {
-        menuContent.style.display = 'none';
-      }
-    });
-  });
+iconX.addEventListener('click', () => {
+    asideMenu.classList.remove('show'); // Esconde o menu ao clicar no X
+});
