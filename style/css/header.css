@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.menuHome {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.primaryLogo {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+#asideMenu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: right 0.3s ease;
+    padding: 20px;
+}
+
+#asideMenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#asideMenu ul li {
+    margin: 10px 0;
+}
+
+#asideMenu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#asideMenu.show {
+    right: 0;
+}
