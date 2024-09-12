@@ -12,63 +12,39 @@ header {
 }
 
 .menuHome {
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: 000;
-    cursor: pointer;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    background-color: #3eb06b;
+    padding: 20px 0px 20px 0px;
+}
+
+.menuHome-options {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.menuHome-options > li > a {
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    color: #FFF;
 }
 
 .primaryLogo {
-    text-decoration: none;
-    color: #000;
-    font-size: 24px;
-}
-
-.asideMenu {
-    position: fixed;
-    top: 0;
-    left: -300px; /* Escondido fora da tela */
-    width: 250px;
-    height: 100%;
-    background-color: #fff;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.178);
-    color: white;
-    transition: right 0.3s ease;
-    padding: 20px;
-}
-
-.asideMenu.show {
-    left: 0; /* Quando visível, ele desliza para dentro da tela */
-}
-.asideMenu > ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.asideMenu > ul > li > a {
-    text-decoration: none;
-    color: #000;
-}
-
-#asideMenu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#asideMenu ul li {
-    margin: 10px 0;
-}
-
-.iconX {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    transform: translateX(-50%);
+    left: 50%;
+    margin: auto;
+    text-decoration: none;
+    color: #000;
     font-size: 24px;
-    cursor: pointer;
-    background: none;
-    border: none;
 }
+
 .greenContent {
     width: 100%;
     height: 300px;
