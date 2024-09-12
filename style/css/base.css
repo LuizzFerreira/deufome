@@ -3,9 +3,29 @@
     margin: 0;
 }
 @font-face {
-    font-family: "Anton-Regular";
-    src: url("../fonts/Anton-Regular.ttf") format("ttf");
+    font-family: "ArchivoBlack-Regular";
+    src: url("../fonts/ArchivoBlack-Regular.ttf");
     font-style: normal;
     font-weight: 700;
     font-display: swap;
+  }
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url("../fonts/Poppins-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+  :root {
+    --color-bold: #1f2a3b;
+  }
+  a {
+    text-decoration: none;
   }
