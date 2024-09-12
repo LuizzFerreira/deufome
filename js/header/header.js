@@ -6,7 +6,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 });
 
-function toggleAsideMenu() {
-    const menu = document.getElementById('asideMenu');
-    menu.classList.toggle('show');
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.getElementById('menuHome');
+    const menuContent = document.getElementById('asideMenu');
+  
+    menuButton.addEventListener('click', function (event) {
+      event.stopPropagation();
+      if (menuContent.style.display === 'block') {
+        menuContent.style.display = 'none';
+      } else {
+        menuContent.style.display = 'block';
+      }
+    });
+  
+    document.addEventListener('click', function (event) {
+      const target = event.target;
+      if (!menuContent.contains(target) && target !== iconX) {
+        menuContent.style.display = 'none';
+      }
+    });
+  });
