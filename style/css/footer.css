@@ -1,3 +1,6 @@
+.menuHome {
+    overflow: hidden;
+}
 .menuHome .option {
     display: flex;
     flex-direction: column;
